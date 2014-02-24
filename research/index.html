@@ -1,0 +1,127 @@
+---
+layout: default
+title: Research
+---
+<div class="content-outer">
+	<div id="page-content" class="row page">
+
+		<div id="primary" class="eight columns">
+		<h1>Research opportunities</h1>
+		<p>
+			Undergraduate students have several ways of contributing to research conducted 
+			in the lab. Research opportunities include being a <strong>voluntary research 
+			assistant</strong>, taking a <strong>directed study</strong> class for course credit, 
+			and doing your <strong>capstone project</strong> in the lab. Occasionally, we
+			also offer <strong>summer research</strong> assistantships. If you would like to know 
+			more about how you can take part of research in the lab, please contact Dr. 
+			{{ site.owner.pi }} for more information.
+		</p>
+		<p>
+			Undergraduates can also contribute to research in the lab by participating in 
+			experiments. We are always looking for participants. We conduct experiments
+			both in the lab and online. In general, lab-based experiments offer 
+			compensation proportional to the time they require for completion and/or the 
+			inconvenience they might generate for the participant. Online experiments on 
+			the other hand can <strong>sometimes</strong> recruit students willing to 
+			participate on a voluntary basis.			
+		</p>
+		<p>
+			Participating in research, either as a researcher or experimental subject,
+			can be a very rewarding experience. You might gain unique insight in 
+			how production of new knowledge takes place, and how researchers gather and 
+			think about their data and its significance. Participating in research is also
+			an important part of the experience of being a student in a research 
+			institution. You can learn more about the projects currently being run in the 
+			lab in the list below. A list of current experiments is also provided 
+			in the sidebar for your convenience.
+		</p>
+		<h1>Experiments currently being run</h1>
+			<h2 id="lab">In the lab</h2>
+				{% for experiment in site.data.experiments %}
+					{% if experiment.active == true and experiment.online == false %} 
+						<section id="info">	
+							<div class="row">
+								<div class="twelve columns">
+									<h2 id="{{ experiment.code }}">{{ experiment.name }}</h2>
+									<p>{{ experiment.description }}</p>
+									<dl>
+										<dt>Contact:</dt>
+											{% for incharge in experiment.incharge %}
+												<dd>{{incharge}} ({{ site.owner.email }})</dd>
+											{% endfor %}
+										<dt>Methods:</dt>
+											{% for method in experiment.method %}
+												<dd>{{ method }}</dd>
+											{% endfor %}
+										<dt>Where:</dt>
+											<dd>{{ experiment.where }}</dd>
+										<dt>Duration:</dt>
+											<dd>{{ experiment.duration }}</dd>
+										<dt>Compensation:</dt>
+											{% for compensation in experiment.compensation %}
+												<dd>{{ compensation }}</dd>
+											{% endfor %}
+										<dt>Eligibility:</dt>
+											{% for eligibility in experiment.eligibility %}
+												<dd>{{ eligibility }}</dd>
+											{% endfor %}
+										<dt>Exclusion criteria:</d>
+											{% for exclusion in experiment.exclusion %}
+												<dd>{{ exclusion }}</dd>
+											{% endfor %}
+									</dl>
+								</div>
+							</div>	
+						</section> <!-- Info Section End-->
+					{% endif %}
+				{% endfor %}            
+		
+			<h2 id="online">Online</h2>
+				{% for experiment in site.data.experiments %}
+					{% if experiment.active == true and experiment.online == true %} 
+						<section id="info">	
+							<div class="row">
+								<div class="twelve columns">
+									<h2 id="{{ experiment.code }}">{{ experiment.name }}</h2>
+									<p>{{ experiment.description }}</p>
+									<dl>
+										<dt>Contact:</dt>
+											{% for incharge in experiment.incharge %}
+												<dd>{{incharge}} ({{ site.owner.email }})</dd>
+											{% endfor %}
+										<dt>Methods:</dt>
+											{% for method in experiment.method %}
+												<dd>{{ method }}</dd>
+											{% endfor %}
+										<dt>Where:</dt>
+											<dd>{{ experiment.where }}</dd>
+										<dt>Duration:</dt>
+											<dd>{{ experiment.duration }}</dd>
+										<dt>Compensation:</dt>
+											{% for compensation in experiment.compensation %}
+												<dd>{{ compensation }}</dd>
+											{% endfor %}
+										<dt>Eligibility:</dt>
+											{% for eligibility in experiment.eligibility %}
+												<dd>{{ eligibility }}</dd>
+											{% endfor %}
+										<dt>Exclusion criteria:</d>
+											{% for exclusion in experiment.exclusion %}
+												<dd>{{ exclusion }}</dd>
+											{% endfor %}
+										<dt>URL:</d>
+											{% for url in experiment.url %}
+												<dd><a href="{{ url }}">{{ url }}</a></dd>
+											{% endfor %}
+									</dl>
+								</div>
+							</div>	
+						</section> <!-- Info Section End-->
+					{% endif %}
+				{% endfor %}            
+		</div> <!-- primary end -->
+
+		{% include sidebar-research.html %}
+
+	</div> <!-- page-content End-->
+</div> <!-- Content End-->

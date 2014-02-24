@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<!-- Content
+================================================== -->
+<div class="content-outer">
+	<div id="page-content" class="row">
+		<div id="primary" class="eight columns">
+			<article class="post">
+				<div class="entry-header cf">
+					<h1>{{ page.title }}</h1>
+					<p class="post-meta">
+						<time class="date" datetime={{ page.date | date_to_string }}>{{ page.date | date_to_string }}</time>
+						/
+						{% assign sortedcategories = page.categories | sort %}
+						{% for category in sortedcategories %}
+							<span class="categories"><a href="{{ site.url }}/blog/categories/index.html#{{ category }}">{{ category }}</a></span> /
+						{% endfor %}
+					</p>
+				</div>
+   
+				{% if page.thumb %}
+				<div class="post-thumb">
+					<img src="{{ site.url }}/images/post-image/{{ page.thumb }}" alt="post-image" title="post-image">
+				</div>
+				{% endif %}
+
+				<div class="post-content">
+					{{ content }}
+				</div>
+
+				<p class="tags">
+					<span><strong>Tags</strong> |</span>
+					{% assign sortedtags = page.tags | sort %}
+					{% for tag in sortedtags %}
+						<a href="{{ site.url }}/blog/tags/index.html#{{ tag }}">{{ tag }}</a>| 
+					{% endfor %}
+				</p>
+
+				<ul class="post-nav cf">
+				{% if page.previous %}
+					<li class="prev"><a rel="prev" href="{{ page.previous.url }}">&larr; {{ page.previous.title }}</a></li>
+				{% endif %}
+				{% if page.next %} 
+        			<li class="next"><a rel="next" href="{{ page.next.url }}">{{ page.next.title }} &rarr;</a></li>
+				{% endif %}
+				</ul>
+
+			</article> <!-- post end -->
+     	</div> <!-- primary end -->
+     	{% include sidebar.html %}
+	</div>
+</div> <!-- Content End-->

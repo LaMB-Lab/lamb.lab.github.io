@@ -1,0 +1,66 @@
+title:            "Language, Mind and Brain Lab @ NYU Abu Dhabi"
+tagline:          "Home page of the LaMB lab at NYU Abu Dhabi"
+description:      >
+   At the LaMB lab we investigate the mental and neural architecture of the language system. 
+   Our research is informed by linguistic theory.
+# Your site's domain goes here. Leave http://localhost:4000 server or blank when working locally.
+url:              
+
+# Owner/author information
+owner:
+  name:           "Language, Mind and Brain Lab"
+  avatar:         
+  bio:            
+  email:          lamb.lab.nyuad@gmail.com
+  # Lab address
+  address:        |
+     1317 Sama Tower
+     Electra Street (next to NMC hospital)
+     Abu Dhabi, P.O. Box 129188
+     United Arab Emirates
+  phone:          +971 2 628 5040
+  pi:             Diogo Almeida
+  piat:           diogo@nyu.edu
+  # Social networking links are used in author-bio sidebar. Update and remove as you like.
+  twitter:        
+  facebook:       
+  github:         
+  linkedin:       
+  instagram:      
+  lastfm:         
+  tumblr:         
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:        
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: Home
+    url:   /index.html
+  - title: People
+    url:   /people/
+  - title: Research
+    url:   /research/
+  - title: Blog
+    url:   /blog/
+  - title: Blog
+    url:   https://github.com/LaMB-Lab
+    external: true
+    
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Asia/Dubai
+future:      true
+pygments:    true
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /blog/:year/:month/:day/:title.html
+excerpt_separator: <!-- more -->
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]

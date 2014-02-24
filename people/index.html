@@ -1,0 +1,99 @@
+---
+layout: default
+title: People
+---
+<!-- Content
+================================================== -->
+<div class="content-outer">
+	<div id="page-content" class="row page">
+		<div id="primary" class="twelve columns">
+		   <h2>Researchers</h2>
+			   <div class="row">
+					<div id="team-wrapper" class="bgrid-quarters cf">
+						{% for member in site.data.members %}
+						{% if  member.personalcategory == 'researcher' %}
+						 <div class="column member">
+							<div class"member-name">
+							   {% if  member.url != 'none' %}
+								  <h5><a href="{{ member.url }}">{{ member.name }}</a></h5>
+							   {% else %}
+								  <h5>{{ member.name }}</h5>
+							   {% endif %}
+							   <span>{{ member.position }}</span>
+							</div>
+						 </div>
+						{% endif %}
+						{% endfor %}
+					</div> <!-- Team wrapper End -->
+				</div> <!-- row End -->
+
+			<h2>Local Affiliates and Collaborators</h2>
+				<div class="row">
+					<div id="team-wrapper" class="bgrid-quarters cf">
+						{% for member in site.data.members %}
+						{% if  member.personalcategory == 'collaborator' %}
+						 <div class="column member">
+							<div class"member-name">
+							   {% if  member.url != 'none' %}
+								  <h5><a href="{{ member.url }}">{{ member.name }}</a></h5>
+							   {% else %}
+								  <h5>{{ member.name }}</h5>
+							   {% endif %}
+							   {% if  member.affiliationurl != 'none' %}
+								  <span>{{ member.position }}, <a href="{{ member.affiliationurl }}">{{ member.affiliation }}</a></span>
+							   {% else %}
+								  <span>{{ member.position }}, {{ member.affiliation }}</span>
+							   {% endif %}
+							</div>
+						 </div>
+						{% endif %}
+						{% endfor %}
+					</div> <!-- Team wrapper End -->
+				</div> <!-- row End -->
+
+			<h2>Visitors</h2>
+			<div class="row">
+				<div id="team-wrapper" class="bgrid-quarters cf">
+				{% for member in site.data.members %}
+					{% if  member.personalcategory == 'visitor' %}
+						<div class="column member">
+							<div class"member-name">
+								{% if  member.url != 'none' %}
+									<h5><a href="{{ member.url }}">{{ member.name }}</a></h5>
+								{% else %}
+									<h5>{{ member.name }}</h5>
+								{% endif %}
+								{% if  member.affiliationurl != 'none' %}
+									<span>{{ member.position }}, <a href="{{ member.affiliationurl }}">{{ member.affiliation }}</a></span>
+								{% else %}
+									<span>{{ member.position }}, {{ member.affiliation }}</span>
+								{% endif %}
+							</div>
+						</div>
+					{% endif %}
+				{% endfor %}
+				</div> <!-- Team wrapper End -->
+			</div> <!-- row End -->			
+
+			<h2>Undergraduates</h2>
+				<div class="row">
+					<div id="team-wrapper" class="bgrid-quarters cf">
+						{% for member in site.data.members %}
+							{% if  member.personalcategory == 'undergraduate' %}
+								<div class="column member">
+									<div class"member-name">
+										{% if  member.url != 'none' %}
+											<h5><a href="{{ member.url }}">{{ member.name }}</a></h5>
+										{% else %}
+											<h5>{{ member.name }}</h5>
+										{% endif %}
+											<span>{{ member.position }}</span>
+									</div>
+								</div>
+							{% endif %}
+						{% endfor %}
+					</div> <!-- Team wrapper End -->
+				</div> <!-- row End -->			
+		</div> <!-- primary end -->
+	</div> <!-- page-content End-->
+</div> <!-- Content End-->

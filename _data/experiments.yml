@@ -1,0 +1,90 @@
+- name:                   Words in Hebrew
+  code:                   gomorrah
+  online:                 true
+  url:                    https://sites.google.com/a/nyu.edu/kevin-schluter/experiments/hebrew-words-experiment
+  pi:                     Diogo Almeida
+  incharge:               Kevin Schluter
+  language:               hebrew
+  description:            >
+     Description comes here. Explain your stuff. But try to concise.
+     Multiline explanations should work out fine.
+  duration:               10 - 15 minutes
+  eligibility:            [ 18 years old, Hebrew speaker]
+  platform:               inquisit  
+  version:                2.0
+  bitbucket:              null
+  active:                 true
+
+- name:                   Survey of Modern Standard Arabic Words
+  code:                   vasco
+  online:                 true
+  url:                    null
+  pi:                     Diogo Almeida
+  incharge:               Kevin Schluter
+  language:               modern standard arabic
+  description:            >
+     Description comes here. Explain your stuff. But try to concise.
+     Multiline explanations should work out fine.
+  eligibility:            [ 18 years old, Arabic speaker] 
+  platform:               qualtrics  
+  version:                1.0
+  bitbucket:              null
+  active:                 true
+
+- name:                   Reading sentences in English
+  code:                   akira
+  online:                 true
+  url:                    null
+  pi:                     Diogo Almeida
+  incharge:               Matthew Tucker
+  language:               english
+  description:            >
+     Description comes here. Explain your stuff. But try to concise.
+     Multiline explanations should work out fine.
+  eligibility:            [ 18 years old, native English speaker] 
+  platform:               ibex
+  version:                1.0
+  bitbucket:              null
+  active:                 true
+
+- name:                   Speech sounds
+  code:                   fish
+  pi:                     Diogo Almeida
+  incharge:               Kevin Schluter
+  language:               english
+  description:            >
+     Description comes here. Explain your stuff. But try to concise.
+     Multiline explanations should work out fine.
+  eligibility:            [ at least 18 years old, native English speaker, right-handed ] 
+  exclusion:              [ history of linguistic or cognitive impairment, history of brain disorders such as epilepsy ] 
+  online:                 false
+  url:                    null
+  where:                  Sama 1317
+  method:                 EEG
+  duration:               1 to 2 hours
+  compensation:           60 AED/hour
+  platform:               presentation
+  version:                1.0
+  bitbucket:              null
+  active:                 true
+
+- name:                   Sentence comprehension in English
+  code:                   gryphon
+  pi:                     Diogo Almeida
+  incharge:               Matthew Tucker
+  language:               english
+  description:            >
+     Description comes here. Explain your stuff. But try to concise.
+     Multiline explanations should work out fine.
+  eligibility:            [ at least 18 years old, native English speaker, right-handed", normal vision or contacts ]
+  exclusion:              [ jewelry, makeup, or clothing containing metal, braces or permanent retainers, history of linguistic or cognitive impairment, history of brain disorders such as epilepsy ] 
+  online:                 false
+  url:                    null
+  where:                  CSE
+  method:                 [ EEG, MEG, behavioral ]
+  duration:               3 to 4 hours
+  compensation:           60 AED/hour
+  platform:               presentation
+  version:                1.0
+  bitbucket:              null
+  active:                 true

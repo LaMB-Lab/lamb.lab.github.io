@@ -1,0 +1,18 @@
+{% assign current = page.url | downcase | split: '/' %}
+<nav id="nav-wrap">
+
+   <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+	<a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+   <ul id="nav" class="nav">
+
+	  <li {% if current[1] == 'index' %}class='current'{% endif %}><a href="{{ site.url }}/index.html">Home</a></li>
+	  <li {% if current[1] == 'people' %}class='current'{% endif %}><a href="{{ site.url }}/people/">People</a></li>
+	  <li {% if current[1] == 'publications' %}class='current'{% endif %}><a href="{{ site.url }}/publications/">Publications</a></li>
+	  <li {% if current[1] == 'research' %}class='current'{% endif %}><a href="{{ site.url }}/research/">Research</a></li>
+	  <li {% if current[1] == 'blog' %}class='current'{% endif %}><a href="{{ site.url }}/blog/">Blog</a></li>
+	  <li><a href="https://github.com/LaMB-Lab">Github</a></li>
+
+   </ul> <!-- end #nav -->
+
+</nav> <!-- end #nav-wrap -->

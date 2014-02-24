@@ -1,0 +1,17 @@
+     	<div id="secondary" class="four columns end">
+        	<aside id="sidebar">
+
+				<div class="widget widget_categories">
+                	<h5 class="widget-title"><a href="{{ site.url }}/blog/index.html">Latest News</a></h5>
+                		<ul class="link-list cf">
+						{% for post in site.posts limit: 5 %}
+							<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+						{% endfor %}
+						</ul>
+				</div>
+
+				{% include sidebar-experiments-chunk.html %}
+				
+            </aside> <!-- Sidebar End -->
+
+		</div> <!-- secondary end -->

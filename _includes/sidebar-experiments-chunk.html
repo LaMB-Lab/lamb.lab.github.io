@@ -1,0 +1,21 @@
+				<div class="widget widget_categories">
+                	<h5 class="widget-title"><a href="{{ site.url }}/research/index.html#lab">Current lab experiments</a></h5>
+                		<ul class="link-list cf">
+							{% for experiment in site.data.experiments %}
+								{% if experiment.active == true and experiment.online == false %} 
+									<li><a href="{{ site.url }}/research/index.html#{{ experiment.code }}">{{ experiment.name }}</a></li>
+								{% endif %}
+							{% endfor %}            
+						</ul>
+				</div>
+
+				<div class="widget widget_categories">
+                	<h5 class="widget-title"><a href="{{ site.url }}/research/index.html#online">Current online experiments</a></h5>
+                		<ul class="link-list cf">
+							{% for experiment in site.data.experiments %}
+								{% if experiment.active == true and experiment.online == true %} 
+									<li><a href="{{ site.url }}/research/index.html#{{ experiment.code }}">{{ experiment.name }}</a></li>
+								{% endif %}
+							{% endfor %}            
+						</ul>
+				</div>

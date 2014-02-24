@@ -1,0 +1,119 @@
+- name:                   Diogo Almeida
+  position:               Principal Investigator
+  bio:                    I don't have one yet!
+  url:                    https://files.nyu.edu/ad151/public/
+  affiliation:            NYUAD
+  affiliationurl:         http://nyuad.nyu.edu/
+  picture:                diogo-01.jpg
+  showpicture:            false
+  personalcategory:       researcher
+  
+- name:                   Kevin Schluter
+  position:               Postdoc
+  bio:                    None yet!
+  url:                    https://sites.google.com/a/nyu.edu/kevin-schluter/
+  affiliation:            NYUAD
+  affiliationurl:         http://nyuad.nyu.edu/
+  picture:                kts-02.jpg
+  showpicture:            false
+  personalcategory:       researcher
+
+- name:                   Matt Tucker
+  position:               Postdoc
+  bio:                    None yet!
+  url:                    https://files.nyu.edu/mat11/public/
+  affiliation:            NYUAD
+  affiliationurl:         http://nyuad.nyu.edu/
+  picture:                mt-03.jpg
+  showpicture:            false
+  personalcategory:       researcher
+
+- name:                   Ali Idrissi
+  position:               Associate Professor
+  bio:                    None yet!
+  url:                    none
+  affiliation:            UAEU
+  affiliationurl:         http://www.fhss.uaeu.ac.ae/linguistics/
+  picture:                none
+  showpicture:            false
+  personalcategory:       collaborator
+
+- name:                   Stephen Politzer-Ahles
+  position:               Postdoc
+  bio:                    None yet!
+  url:                    http://www.nyu.edu/projects/politzer-ahles/
+  affiliation:            NeLLab
+  affiliationurl:         http://www.psych.nyu.edu/nellab/
+  picture:                spa-02.jpg
+  showpicture:            false
+  personalcategory:       collaborator
+
+- name:                   Joseph King
+  position:               Research Assistant
+  bio:                    None yet!
+  url:                    none
+  affiliation:            NeLLab
+  affiliationurl:         http://www.psych.nyu.edu/nellab/
+  picture:                jk-03.jpg
+  showpicture:            false
+  personalcategory:       collaborator
+
+- name:                   Jessica Obidowski
+  position:               Capstone project
+  bio:                    None yet!
+  url:                    none
+  affiliation:            NYUAD
+  affiliationurl:         http://www.nyuad.edu
+  picture:                none
+  showpicture:            false
+  personalcategory:       undergraduate
+
+- name:                   Hyun Kyung Park
+  position:               Capstone project
+  bio:                    None yet!
+  url:                    none
+  affiliation:            NYUAD
+  affiliationurl:         http://www.nyuad.edu
+  picture:                none
+  showpicture:            false
+  personalcategory:       undergraduate
+
+- name:                   Victoria Edmonds
+  position:               Undergraduate researcher
+  bio:                    None yet!
+  url:                    none
+  affiliation:            NYUAD
+  affiliationurl:         http://www.nyuad.edu
+  picture:                none
+  showpicture:            false
+  personalcategory:       undergraduate
+
+- name:                   Tiantian Zheng
+  position:               Undergraduate researcher
+  bio:                    None yet!
+  url:                    none
+  affiliation:            NYUAD
+  affiliationurl:         http://www.nyuad.edu
+  picture:                none
+  showpicture:            false
+  personalcategory:       undergraduate
+
+- name:                   Sid Kouider
+  position:               Professor
+  bio:                    None yet!
+  url:                    http://www.lscp.net/persons/sidk/
+  affiliation:            "CNRS, LSCP"
+  affiliationurl:         http://www.lscp.net/
+  picture:                none
+  showpicture:            false
+  personalcategory:       visitor
+
+- name:                   Sofie Gelskov
+  position:               Postdoc
+  bio:                    None yet!
+  url:                    http://www.drcmr.dk/sofieg
+  affiliation:            "CNRS, LSCP"
+  affiliationurl:         http://www.lscp.net/
+  picture:                none
+  showpicture:            false
+  personalcategory:       visitor

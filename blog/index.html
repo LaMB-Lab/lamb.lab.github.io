@@ -1,0 +1,50 @@
+---
+layout: default
+title: Blog
+---
+<div class="content-outer">
+	<div id="page-content" class="row">
+		<div id="primary" class="twelve columns">
+
+			<section id="journal">
+				<div class="row">
+					<div class="ten columns align-left">
+						<h1>Older posts: <a href="{{ site.url }}/blog/archive/index.html">Archive</a> / <a href="{{ site.url }}/blog/categories/index.html">By categories</a> / <a href="{{ site.url }}/blog/tags/index.html">By Tags</a></h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="ten columns align-center">
+						<h1>Latest posts</h1>
+					</div>
+				</div>
+				<div class="blog-entries">
+					<!-- Entry -->
+					{% for post in site.posts limit: 5 %}
+						<article class="row entry">
+							<div class="entry-header">
+								<div class="permalink">
+									<a href="{{ post.url }}"><i class="fa fa-link"></i></a>
+								</div>
+								<div class="ten columns entry-title pull-right">
+									<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+								</div>
+								<div class="two columns post-meta end">
+									<p>
+										<time datetime="{{ post.date | date_to_string }}" class="post-date" pubdate="">{{ post.date | date_to_string }}</time>
+										<span class="dauthor">{{ post.author }}</span>
+									</p>
+								</div>
+							</div>
+							<div class="ten columns offset-2 post-content">
+								<p> {{ post.excerpt }}
+									<a class="more-link" href="{{ post.url }}">Read More<i class="fa fa-arrow-circle-o-right"></i></a>
+								</p>
+							</div>
+						</article> <!-- Entry End -->
+					{% endfor %}
+				</div> <!-- Entries End -->
+			</section> <!-- Journal Section End-->
+			
+		</div>
+	</div>
+</div> <!-- Content End-->
